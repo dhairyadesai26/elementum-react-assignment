@@ -1,0 +1,96 @@
+/* newsletter.css */
+
+.newsletter {
+  background: #dff0df;
+  padding: 90px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Purple circle decoration on right */
+.newsletter-deco {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  background: #9b59b6;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.newsletter-inner {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.newsletter-inner h2 {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1.5px;
+  margin-bottom: 16px;
+  color: var(--text-dark);
+}
+
+.newsletter-inner p {
+  font-size: 14.5px;
+  color: #4a6b4a;
+  margin-bottom: 38px;
+  line-height: 1.7;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.newsletter-form input[type="email"] {
+  width: 100%;
+  max-width: 380px;
+  padding: 14px 22px;
+  border-radius: 50px;
+  border: 1.5px solid #b8d8b8;
+  background: rgba(255,255,255,0.7);
+  font-family: inherit;
+  font-size: 15px;
+  color: var(--text-dark);
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.newsletter-form input[type="email"]::placeholder {
+  color: #aaa;
+}
+
+.newsletter-form input[type="email"]:focus {
+  border-color: #4a6b4a;
+  box-shadow: 0 0 0 3px rgba(74, 107, 74, 0.12);
+}
+
+.newsletter-btn {
+  display: inline-block;
+  background: var(--text-dark);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 36px;
+  border-radius: 50px;
+  letter-spacing: 0.5px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s;
+}
+
+.newsletter-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  background: #333;
+}

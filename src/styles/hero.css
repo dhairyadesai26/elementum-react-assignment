@@ -1,0 +1,97 @@
+/* hero.css */
+
+.hero {
+  padding-top: 50px;
+  padding-bottom: 80px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+/* Decorative squiggle on left */
+.hero-squiggle {
+  position: absolute;
+  left: -30px;
+  top: 80px;
+  width: 120px;
+  opacity: 0.85;
+  pointer-events: none;
+  animation: float 4s ease-in-out infinite;
+  z-index: 0;
+}
+
+.hero-content {
+  max-width: 920px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: clamp(44px, 7vw, 82px);
+  line-height: 1.25;
+  font-weight: 400;
+  letter-spacing: -2px;
+  color: var(--text-dark);
+}
+
+.hero p {
+  margin-top: 24px;
+  max-width: 500px;
+  margin-inline: auto;
+  line-height: 1.75;
+  color: var(--text-muted);
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* ── Team Row ── */
+.team-row {
+  margin-top: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 18px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+
+.member {
+  border-radius: 50%;
+  overflow: hidden;
+  background: #ddd;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.10);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  flex-shrink: 0;
+}
+
+.member:hover {
+  transform: translateY(-6px) scale(1.06);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+}
+
+/* Different heights create wave effect */
+.member:nth-child(1) { width: 90px; height: 90px; margin-bottom: 30px; }
+.member:nth-child(2) { width: 105px; height: 105px; margin-bottom: 55px; }
+.member:nth-child(3) { width: 120px; height: 120px; margin-bottom: 22px; }
+.member:nth-child(4) { width: 130px; height: 130px; margin-bottom: 0; }
+.member:nth-child(5) { width: 120px; height: 120px; margin-bottom: 22px; }
+.member:nth-child(6) { width: 105px; height: 105px; margin-bottom: 55px; }
+.member:nth-child(7) { width: 90px;  height: 90px;  margin-bottom: 30px; }
+
+.member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 600px) {
+  .hero h1 { letter-spacing: -1px; }
+  .hero-squiggle { display: none; }
+  .team-row { gap: 10px; }
+  .member:nth-child(1),
+  .member:nth-child(7) { display: none; }
+}
