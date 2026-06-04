@@ -1,4 +1,3 @@
-/* About.jsx */
 import '../styles/about.css';
 
 export default function About() {
@@ -6,8 +5,7 @@ export default function About() {
     <section className="about">
       <div className="about-inner">
 
-        {/* Left: Text */}
-        <div className="about-text fade-up">
+<div className="about-text fade-up">
           <h2>
             Tomorrow should<br />
             be <span className="underline-yellow">better</span> than <span className="hl-green">today</span>
@@ -25,8 +23,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Right: Image */}
-        <div className="about-image-wrap">
+<div className="about-image-wrap">
           <div className="about-img-blob"></div>
           <div className="about-triangle"></div>
           <div className="about-img-circle">

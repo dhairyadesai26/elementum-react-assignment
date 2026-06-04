@@ -1,5 +1,3 @@
-/* testimonial.css */
-
 .testimonials {
   padding: 100px 0;
   position: relative;
@@ -13,7 +11,6 @@
   position: relative;
 }
 
-/* ── Section Title ── */
 .testimonials-header {
   text-align: center;
   margin-bottom: 70px;
@@ -28,7 +25,6 @@
   line-height: 1.2;
 }
 
-/* ── Floating Avatar Decorations ── */
 .testi-floaters {
   position: absolute;
   inset: 0;
@@ -51,7 +47,6 @@
   object-fit: cover;
 }
 
-/* Position individual floaters */
 .tf1 {
   width: 70px;
   height: 70px;
@@ -100,7 +95,6 @@
   animation-delay: 1.6s;
 }
 
-/* ── Main Quote Card ── */
 .testi-card {
   background: #f0f0f0;
   border-radius: 24px;
@@ -161,7 +155,6 @@
   color: var(--text-muted);
 }
 
-/* Star rating */
 .testi-stars {
   color: #f5a623;
   font-size: 14px;

@@ -1,4 +1,3 @@
-/* Services.jsx */
 import '../styles/services.css';
 
 export default function Services() {
@@ -6,8 +5,7 @@ export default function Services() {
     <section className="services">
       <div className="services-inner">
 
-        {/* Left: Image with triangle decorations */}
-        <div className="services-image-wrap">
+<div className="services-image-wrap">
           <div className="services-tri-small"></div>
           <div className="services-img-circle">
             <img
@@ -18,8 +16,7 @@ export default function Services() {
           <div className="services-tri-big"></div>
         </div>
 
-        {/* Right: Text */}
-        <div className="services-text fade-up">
+<div className="services-text fade-up">
           <h2>
             <span className="underline-green">See</span> how we can<br />
             help you <span className="hl-yellow">progress</span>

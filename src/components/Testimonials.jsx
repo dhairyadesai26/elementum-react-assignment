@@ -1,4 +1,3 @@
-/* Testimonials.jsx */
 import '../styles/testimonial.css';
 
 const FLOATERS = [
@@ -15,16 +14,14 @@ export default function Testimonials() {
     <section className="testimonials">
       <div className="testimonials-inner">
 
-        {/* Section header */}
-        <div className="testimonials-header">
+<div className="testimonials-header">
           <h2>
             What our customer<br />
             <span className="hl-green">says</span> About <span className="underline-yellow">Us</span>
           </h2>
         </div>
 
-        {/* Floating avatars around the card */}
-        <div className="testi-floaters">
+<div className="testi-floaters">
           {FLOATERS.map((f, i) => (
             <div className={`testi-floater ${f.cls}`} key={i}>
               <img src={f.src} alt={`Customer ${i + 1}`} loading="lazy" />
@@ -32,8 +29,7 @@ export default function Testimonials() {
           ))}
         </div>
 
-        {/* Main quote card */}
-        <div className="testi-card">
+<div className="testi-card">
           <span className="testi-quote-mark">{'\u201C'}</span>
           <div className="testi-stars">★★★★★</div>
           <p>

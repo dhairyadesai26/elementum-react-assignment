@@ -1,4 +1,3 @@
-/* offer.jsx */
 import '../styles/offer.css';
 
 const OFFER_ITEMS = [
@@ -19,7 +18,7 @@ const OFFER_ITEMS = [
 export default function Offer() {
   return (
     <section className="offer" id="offer">
-      {/* Decorative squiggle */}
+      
       <svg className="offer-squiggle" viewBox="0 0 100 160" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M50 10 C20 30, 80 50, 50 80 C20 110, 80 130, 50 155"
@@ -41,15 +40,13 @@ export default function Offer() {
 
         <div className="offer-grid">
 
-          {/* Sidebar descriptions */}
-          <div className="offer-sidebar">
+<div className="offer-sidebar">
             <p>Delivering value-driven solutions</p>
             <p>Creating powerful digital experiences through design</p>
             <p>Data-driven decisions that drive growth</p>
           </div>
 
-          {/* Service rows */}
-          <div className="offer-rows">
+<div className="offer-rows">
             {OFFER_ITEMS.map((item, i) => (
               <div className="offer-row" key={i}>
                 <div className="offer-row-content">

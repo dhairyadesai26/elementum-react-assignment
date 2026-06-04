@@ -1,4 +1,3 @@
-/* Navbar.jsx */
 import '../styles/navbar.css';
 
 export default function Navbar() {

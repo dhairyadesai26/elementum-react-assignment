@@ -1,11 +1,8 @@
-/* offer.css */
-
 .offer {
   padding: 90px 0;
   position: relative;
 }
 
-/* Decorative wave/squiggle on right side */
 .offer-squiggle {
   position: absolute;
   right: 40px;
@@ -40,7 +37,6 @@
   align-items: start;
 }
 
-/* Left: Small description column */
 .offer-sidebar p {
   font-size: 15px;
   line-height: 1.8;
@@ -52,7 +48,6 @@
   margin-top: 8px;
 }
 
-/* Right: Service rows */
 .offer-rows {
   display: flex;
   flex-direction: column;

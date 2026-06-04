@@ -1,4 +1,3 @@
-/* Hero.jsx */
 import '../styles/hero.css';
 
 const TEAM_PHOTOS = [
@@ -14,7 +13,7 @@ const TEAM_PHOTOS = [
 export default function Hero() {
   return (
     <section className="hero">
-      {/* Decorative SVG squiggle on left */}
+      
       <svg className="hero-squiggle" viewBox="0 0 120 200" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path
           d="M60 10 C20 40, 100 60, 60 90 C20 120, 100 140, 60 170 C30 195, 80 200, 60 200"

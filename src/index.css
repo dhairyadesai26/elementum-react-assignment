@@ -1,5 +1,3 @@
-/* index.css */
-
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
 
 * {
@@ -8,7 +6,6 @@
   box-sizing: border-box;
 }
 
-/* Override Vite template defaults */
 :root {
   --background: #ffffff;
   --foreground: #1a1a1a;
@@ -67,7 +64,6 @@ button {
   margin: auto;
 }
 
-/* ── Highlight Utility Classes ── */
 .hl-yellow {
   background: var(--highlight-yellow);
   border-radius: 20px;
@@ -111,7 +107,6 @@ button {
   text-decoration-skip-ink: none;
 }
 
-/* ── Section Animations ── */
 @keyframes fadeUp {
   from {
     opacity: 0;

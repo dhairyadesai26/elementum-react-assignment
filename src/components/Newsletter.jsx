@@ -1,4 +1,3 @@
-/* Newsletter.jsx */
 import '../styles/newsletter.css';
 import { useState } from 'react';
 
@@ -15,7 +14,7 @@ export default function Newsletter() {
 
   return (
     <section className="newsletter">
-      {/* Purple decoration circle */}
+      
       <div className="newsletter-deco"></div>
 
       <div className="newsletter-inner">
